@@ -1,23 +1,52 @@
 # Maximum Contiguous Subarray Sum
 
-## 📌 문제 설명
-주어진 정수 배열에서 **연속된 부분 배열(subarray) 중에서 가장 큰 합을 가지는 부분 배열을 찾는 문제**입니다.
+## Problem Description
+Given an array of integers, the task is to **find the contiguous subarray (containing at least one number) that has the largest sum** and return its sum along with its **starting and ending indices**.
 
-예를 들어, 배열 `[-2,1,-3,4,-1,2,1,-5,4]`가 주어졌을 때,  
-가장 큰 합을 가지는 부분 배열은 `[4,-1,2,1]`이며, **최대 합은 6**입니다.
-
----
-
-## 📥 입력 형식
-- `N`개의 정수를 포함하는 배열 `arr`이 주어집니다. (`N`은 1 이상 10,000 이하)
-- 각 원소는 `-100 ≤ arr[i] ≤ 100` 범위를 가집니다.
+For example, given the array `[-2,1,-3,4,-1,2,1,-5,4]`,  
+the contiguous subarray with the largest sum is `[4,-1,2,1]`, with a **maximum sum of 6**.
 
 ---
 
-## 📤 출력 형식
-- 가장 큰 합을 가지는 부분 배열의 **합(sum), 시작 인덱스(start), 끝 인덱스(end)**를 출력합니다.
+## Input Format
+- An array `arr` containing `N` integers is provided. (`1 ≤ N ≤ 10,000`)
+- Each element satisfies `-100 ≤ arr[i] ≤ 100`.
 
-### ✅ 예제 입력 & 출력
-```python
-arr = [-2,1,-3,4,-1,2,1,-5,4]
-# 출력: (6, 3, 6)  # 합 = 6, 부분 배열 [4,-1,2,1]
+---
+
+## Output Format
+- The output consists of **three integers**:
+  - `start_index`: The **0-based index** where the maximum sum subarray starts.
+  - `end_index`: The **0-based index** where the maximum sum subarray ends.
+  - `max_sum`: The maximum sum of the contiguous subarray.
+
+---
+
+## Example Input & Output
+
+### Example 1
+#### Input:
+```
+1 -2 3 10 -4 7 2 -5
+```
+#### Output:
+```
+2 6 18
+```
+**Explanation:**  
+The subarray `[3, 10, -4, 7, 2]` (from index **2 to 6**) has the maximum sum **18**.
+
+---
+
+### Example 2
+#### Input:
+```
+-2 1 -3 4 -1 2 1 -5 4
+```
+#### Output:
+```
+3 6 6
+```
+**Explanation:**  
+The subarray `[4, -1, 2, 1]` (from index **3 to 6**) has the maximum sum **6**.
+
