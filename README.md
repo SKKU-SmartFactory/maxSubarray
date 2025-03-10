@@ -1,57 +1,60 @@
-# Maximum Contiguous Subarray Sum
+# Linked List Insertion Sort Implementation
 
 ## Problem Description
-Given an array of integers, the task is to **find the contiguous subarray (containing at least one number) that has the largest sum** and return its sum along with its **starting and ending indices**.
 
-For example, given the array `[-2,1,-3,4,-1,2,1,-5,4]`,  
-the contiguous subarray with the largest sum is `[4,-1,2,1]`, with a **maximum sum of 6**.
+In this assignment, you will implement an insertion sort algorithm using a linked list data structure in C.
+
+Your task is to modify the array-based insertion sort implementation to work more easily with linked lists. This is a warm-up exercise to welcome you to the Algorithm course.
+
+Since the input size is not determined in advance, you cannot pre-allocate a fixed-size array. The linked list-based implementation allows you to dynamically allocate memory as needed.
+
+---
+
+## Task
+
+**Convert to Linked List**: Transform the provided array-based insertion sort into a linked list implementation
+
+   - Keep the current function names. You cannot change the current function names.
+   - You may create any additional functions and structures needed
+   - Design your own Node structure and linked list operations
+   - The only constraint is that your program must perform insertion sort using a linked list
 
 ---
 
 ## Input Format
-- An array `arr` containing `N` integers is provided. (`1 ≤ N ≤ 10,000`)
-- Each element satisfies `-100 ≤ arr[i] ≤ 100`.
+
+- A sequence of integers, each on a new line or separated by spaces
+- Input is terminated by EOF or non-integer input
 
 ---
 
 ## Output Format
-- The output consists of **three integers**:
-  - `start_index`: The **0-based index** where the maximum sum subarray starts.
-  - `end_index`: The **0-based index** where the maximum sum subarray ends.
-  - `max_sum`: The maximum sum of the contiguous subarray.
+
+- The sorted sequence of integers, separated by spaces
+- A newline character at the end
 
 ---
 
-## Example Input & Output
+## Example
 
-### Example 1
-#### Input:
+### Input:
 ```
-1 -2 3 10 -4 7 2 -5
+5 2 9 1 5 6
 ```
-#### Output:
-```
-2 6 18
-```
-**Explanation:**  
-The subarray `[3, 10, -4, 7, 2]` (from index **2 to 6**) has the maximum sum **18**.
 
----
+### Output:
+```
+1 2 5 5 6 9
+```
 
-### Example 2
-#### Input:
-```
--2 1 -3 4 -1 2 1 -5 4
-```
-#### Output:
-```
-3 6 6
-```
-**Explanation:**  
-The subarray `[4, -1, 2, 1]` (from index **3 to 6**) has the maximum sum **6**.
+---  
+
+## Submission Guidelines
+
+1. Submit a single C file named "run.c" containing your complete implementation
+2. Include detailed comments explaining your approach
+3. Ensure your code compiles without warnings and passes all test cases
 
 ---
 
-## Source Code File
-
-For automatic grading, name the source code file as run.py.
+Good luck!
